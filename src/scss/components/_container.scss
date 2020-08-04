@@ -1,0 +1,19 @@
+.container {
+  background-color: $background-container;
+  height: 100%;
+  margin-left: $container-margin-left;
+  overflow-y: scroll;
+  padding: $container-padding;
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
+
+}
+
+.--hidden {
+  .container {
+    margin-left: 80px;
+    transition: 0.4s;
+  }
+}
+

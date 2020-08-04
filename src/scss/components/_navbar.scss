@@ -1,0 +1,16 @@
+.navbar {
+  background-color: $navbar-background;
+  border-bottom: 3px solid $navbar-border-bottom;
+  margin-left: $navbar-margin-left;
+  padding: $navbar-padding;
+  transition: 0.4s;
+
+}
+
+.--hidden {
+  .navbar {
+    margin-left: 80px;
+    transition: 0.4s;
+
+  }
+}

@@ -1,0 +1,13 @@
+# images
+**/*.jpeg
+**/*.jpg
+**/*.png
+**/*.gif
+**/*.ico
+
+# front
+**/*.less
+**/*.css
+
+**/*.ejs
+**/*.json

@@ -1,0 +1,92 @@
+.sidebar {
+  background-color: $sidebar-background;
+  height: 100%;
+  position: fixed;
+  width: 215px;
+  transition: .5s;
+  overflow-y: scroll;
+
+  .sidebar-toggle {
+    height: $sidebar-toggle-container-height;
+    padding: $sidebar-toggle-container-padding;
+    width: $sidebar-toggle-container-width;
+
+    .toogle-menu {
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .sidebar-menu {
+
+    .menu-item {
+
+      .item-link {
+        display: block;
+        font-weight: 300;
+        padding: $sidebar-menu-item-padding;
+
+        .item-icon,
+        .item-text {
+          color: $sidebar-menu-item-color;
+        }
+
+        .item-icon {
+          margin-right: 16px;
+          font-size: 20px;
+        }
+
+        .item-text {
+          display: inline-block;
+        }
+
+        &.active {
+          background-color: $sidebar-menu-item-hover;
+          border-left: 3px solid $primary;
+
+          .item-icon,
+          .item-text {
+            color: $primary;
+          }
+        }
+
+
+        &:hover {
+          background-color: $sidebar-menu-item-hover;
+          transition: .4s;
+
+          .item-icon,
+          .item-text {
+            color: $primary;
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+}
+
+.--hidden {
+  .sidebar {
+    width: 80px;
+
+    .sidebar-toggle {
+      width: 53px;
+    }
+
+    .sidebar-menu {
+      .menu-item {
+        .item-link {
+          .item-text {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+}

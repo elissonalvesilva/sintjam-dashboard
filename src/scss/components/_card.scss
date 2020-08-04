@@ -1,0 +1,14 @@
+.card {
+  background-color: $card-background;
+  border: $card-border;
+  display: inline-block;
+  padding: 24px;
+
+  .card-title {
+    color: $card-title-color;
+  }
+
+  .card-body {
+    margin: 15px 0;
+  }
+}
