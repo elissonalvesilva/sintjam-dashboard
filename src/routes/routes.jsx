@@ -9,7 +9,7 @@ function AppRoutes() {
   return (
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/sindicalizados" component={Sindicalizados}/>
+      <Route path="/sindicalizados" component={Sindicalizados}/>
     </Switch>
   );
 }

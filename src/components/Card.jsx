@@ -22,9 +22,18 @@ Card.defaultProps = {
 };
 
 Card.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
-  title: PropTypes.arrayOf(PropTypes.element),
-  footer: PropTypes.arrayOf(PropTypes.element),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  title: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  footer: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
 };
 
 export default Card;
